@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Drum kit</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Javascript Drum Kit</h1>
+      <div class="drum-kit-container">
+        <section class="wrapper">
+          <img class="drum-kit-img" src="./assets/images/drum-kit.png" alt="drum kit" />
+
+          <img class="top-hat" src="./assets/images/top-hat.png" alt="top-hat" />
+          <img class="top-b" src="./assets/images/to-burger.png" alt="top-burger" />
+          <div data-key="j" class="key j">J</div>
+          <div data-key="b" class="key b">B</div>
+          <div data-key="v" class="key v">V</div>
+          <div data-key="h" class="key h">H</div>
+          <div data-key="g" class="key g">G</div>
+          <div data-key="f" class="key f">F</div>
+          <div data-key="e" class="key e">E</div>
+          <div data-key="r" class="key r">R</div>
+          <div data-key="i" class="key i">I</div>
+          <div data-key="k" class="key k">K</div>
+        </section>
+      </div>
+      <aside>
+        <h2>Key Mapping</h2>
+        <ul class="key-map-list">
+          <li>
+            <kbd class="key code">E</kbd>
+            <span class="sound">Crash</span>
+          </li>
+          <li>
+            <kbd class="key code">R</kbd>
+            <span class="sound">Ride</span>
+          </li>
+          <li>
+            <kbd class="key code">F</kbd>
+            <span class="sound"> Floor tom </span>
+          </li>
+          <li>
+            <kbd class="key code">G</kbd>
+            <span class="sound">Mid tom</span>
+          </li>
+          <li>
+            <kbd class="key code">H</kbd>
+            <span class="sound">High tom</span>
+          </li>
+          <li>
+            <kbd class="key code">V</kbd>
+            <kbd class="key code">B</kbd>
+            <span class="sound">Kick</span>
+          </li>
+          <li>
+            <kbd class="key code">J</kbd>
+            <span class="sound">Snare</span>
+          </li>
+
+          <li>
+            <kbd class="key code">I</kbd>
+            <span class="sound">Hi-Hat Open</span>
+          </li>
+          <li>
+            <kbd class="key code">K</kbd>
+            <span class="sound">Hi-Hat Closed</span>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <audio data-key="j" src="./assets/audio/74.wav"></audio>
+    <audio data-key="b" src="./assets/audio/66.wav"></audio>
+    <audio data-key="v" src="./assets/audio/86.wav"></audio>
+    <audio data-key="h" src="./assets/audio/72.wav"></audio>
+    <audio data-key="g" src="./assets/audio/71.wav"></audio>
+    <audio data-key="f" src="./assets/audio/70.wav"></audio>
+    <audio data-key="e" src="./assets/audio/69.wav"></audio>
+    <audio data-key="r" src="./assets/audio/82.wav"></audio>
+    <audio data-key="i" src="./assets/audio/73.wav"></audio>
+    <audio data-key="k" src="./assets/audio/75.wav"></audio>
+  </body>
+</html>

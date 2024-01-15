@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+/*! global*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #cb2026;
+  font-size: 3.2em;
+  text-shadow: 1px 1px 1px #5a0b0d;
+}
+
+/** I M A G E S  **/
+.drum-kit-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.wrapper {
+  position: relative;
+}
+.drum-kit-img {
+  width: 600px;
+}
+.top-hat {
+  position: absolute;
+  top: 111px;
+  left: 79px;
+  transform: rotate(-8deg);
+}
+.top-b {
+  position: absolute;
+  top: 168px;
+  right: 71px;
+  transform: scale(1.35);
+}
+
+/**** keys */
+
+.key {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: #444;
+  background-color: #eaeaea;
+  border: 3px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+  display: grid;
+  place-items: center;
+  transition: all ease-in-out 0.042s;
+}
+
+.e {
+  top: 80px;
+  left: 75px;
+}
+.r {
+  top: 87px;
+  left: 165px;
+}
+.i {
+  right: 165px;
+  top: 144px;
+}
+.k {
+  right: 60px;
+  top: 150px;
+}
+.g {
+  left: 222px;
+  top: 220px;
+}
+.h {
+  right: 227px;
+  top: 240px;
+}
+.j {
+  right: 145px;
+  top: 280px;
+}
+.f {
+  top: 320px;
+  left: 133px;
+}
+.v {
+  top: 355px;
+  right: 308px;
+}
+.b {
+  top: 355px;
+  right: 250px;
+}
+
+/** key mapping **/
+aside {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  top: 0;
+  right: 0;
+  font-family: 'Handlee', cursive;
+}
+
+aside h2 {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid white;
+  margin-block: 20px 35px;
+  padding-block: 0 20px;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 40px;
+  margin: 16px 0;
+}
+aside ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.code {
+  position: static;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 0;
+}
+
+.sound {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/** Javascript **/
+.playing {
+  transform: scale(1.12);
+}
