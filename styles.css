@@ -36,11 +36,12 @@ h1 {
   position: absolute;
   top: 111px;
   left: 79px;
-  transform: rotate(-8deg);
+  rotate: -8deg;
+  scale: 1.5;
 }
 .top-b {
   position: absolute;
-  top: 168px;
+  top: 164px;
   right: 71px;
   transform: scale(1.35);
 }
